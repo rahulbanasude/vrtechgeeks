@@ -1,0 +1,20 @@
+<div class="post">
+  <div class="title">
+  <b><%= @post.title%></b>
+  </div></div>
+<div class="container text-center">
+<p>
+
+<%= image_tag @post.image, class: "image"%>
+
+</p>
+
+<p>
+  <div class="post_body">
+  <%= sanitize @post.body %>
+  </div>
+</p>
+  <a class="button button2""<%= link_to 'Back', posts_path %></a>
+
+</div>
+</div>
