@@ -15,7 +15,7 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
  require 'capistrano/rbenv'
  set :rbenv_type, :user
- set :rbenv_ruby, '2.4.0'
+ set :rbenv_ruby, '2.3.1'
 install_plugin Capistrano::SCM::Git
 require 'capistrano/rails'
 require 'capistrano/passenger'
