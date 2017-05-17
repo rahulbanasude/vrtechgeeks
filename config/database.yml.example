@@ -79,9 +79,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: vrtechgeeks
-  username: rahul
-  pool: 5
-  password: 
+  <<: *default
+  database: vrtechgeeks_production
+  username: vrtechgeeks
+  password: <%= ENV['VRTECHGEEKS_DATABASE_PASSWORD'] %>
