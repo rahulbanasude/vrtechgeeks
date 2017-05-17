@@ -1,20 +1,26 @@
-<div class="post">
-  <div class="title">
-  <b><%= @post.title%></b>
-  </div></div>
-<div class="container text-center">
-<p>
+
+
+<div class="article-area content-block">
+  <div class="w3-center">
+<h1><%= @post.title%></h1>
+<h5><span class="w3-opacity"><%= @post.created_at.strftime("%B, %d, %Y") %></span></h5>
+
+</div>
+
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
 <%= image_tag @post.image, class: "image"%>
 
-</p>
+</div>
 
-<p>
+
   <div class="post_body">
-  <%= sanitize @post.body %>
+  <p>
+     <%= sanitize @post.body %>
+  </p>
   </div>
-</p>
-  <a class="button button2""<%= link_to 'Back', posts_path %></a>
 
+<div class="back_button">
+<%= link_to 'Back', posts_path, class: "w3-button w3-white w3-border" %>
 </div>
 </div>
