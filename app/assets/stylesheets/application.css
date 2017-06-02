@@ -22,3 +22,6 @@
  .navbar li {
    color: #000;
   }
+a{
+  text-decoration: none !important;
+}
