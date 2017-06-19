@@ -35,7 +35,7 @@ gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
 gem "paperclip", "~> 5.0.0"
-
+gem 'meta-tags'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

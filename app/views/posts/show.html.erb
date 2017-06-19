@@ -21,9 +21,11 @@
   <p>
      <%= sanitize @post.body %>
   </p>
+  <%= render 'disqus'%>
   </div>
 
 <div class="back_button">
 <%= link_to 'Back', posts_path, class: "w3-button w3-white w3-border" %>
 </div>
+
 </div>
