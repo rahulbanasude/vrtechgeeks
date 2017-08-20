@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'pages/about'
 
 resources :posts
-  root 'posts#index'
+  root 'pages#about'
   devise_scope :user do
   get '/users/:id' => 'users#show'
   get 'login', to: 'devise/sessions#new'
